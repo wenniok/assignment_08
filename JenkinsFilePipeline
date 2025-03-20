@@ -21,21 +21,21 @@ pipeline{
 
          stage('Testing'){
             steps{
-            echo 'This is testing'
+            sh 'firebase deploy -P devops-assignment-8-test-43b3c --token "$FIREBASE_DEPLOY_TOKEN"'
             }
         }
 
 
         stage('Staging'){
             steps{
-            sh 'firebase deploy -P password-generator-staging --token "$FIREBASE_DEPLOY_TOKEN"'
+            sh 'firebase deploy -P devops-assignment-8-stag-a5639 --token "$FIREBASE_DEPLOY_TOKEN"'
             }
         }
 
 
         stage('Production'){
             steps{
-            sh 'firebase deploy -P password-generator-production --token "$FIREBASE_DEPLOY_TOKEN"'
+            sh 'firebase deploy -P devops-assignment-8-prod-cf51b --token "$FIREBASE_DEPLOY_TOKEN"'
             }
         }
     }
