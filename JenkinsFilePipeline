@@ -21,7 +21,7 @@ pipeline{
 
          stage('Testing'){
             steps{
-            sh 'firebase deploy -P devops-assignment-8-test-43b3c --token "$FIREBASE_DEPLOY_TOKEN"'
+            sh 'firebase deploy -P devops-assignment-8-test-7c49d --token "$FIREBASE_DEPLOY_TOKEN"'
             }
         }
 
