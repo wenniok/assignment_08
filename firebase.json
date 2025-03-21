@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "public",
+    "site": "devops-assignment-8-test-7c49d",
     "ignore": [
       "firebase.json",
       "**/.*",
